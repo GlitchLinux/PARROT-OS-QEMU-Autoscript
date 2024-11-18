@@ -1,6 +1,6 @@
 PARROT-OS-QEMU-Autoscript
 
-This Bash script automates the process of downloading, configuring, and running a bootable Ventoy image with Tails OS. It includes downloading Ventoy, formatting a virtual disk image, adding the Tails OS ISO, and running the setup in a QEMU virtual machine.
+This Bash script automates the process of downloading, configuring, and running a bootable Ventoy image with PARROT OS. It includes downloading Ventoy, formatting a virtual disk image, adding the PARROT OS ISO, and running the setup in a QEMU virtual machine.
 
 Features
 Downloads and extracts the specified version of Ventoy.
