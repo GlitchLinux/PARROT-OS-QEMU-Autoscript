@@ -15,7 +15,7 @@ ventoy_url="https://github.com/ventoy/Ventoy/releases/download/v${ventoy_version
 ventoy_tar="/tmp/ventoy-${ventoy_version}-linux.tar.gz"
 ventoy_dir="/tmp/ventoy-${ventoy_version}"
 iso_filename="Parrot-home-6.2_amd64.iso"
-iso_url="https://deb.parrot.sh/parrot/iso/6.2/Parrot-home-6.2_amd64.iso"
+iso_url="https://deb.parrot.sh/parrot/iso/6.3.2/Parrot-home-6.3.2_amd64.iso"
 iso_path="/tmp/ventoy/$iso_filename"
 
 # Download Ventoy and extract it to /tmp
@@ -32,9 +32,9 @@ if [ -z "$ventoy_script" ]; then
     exit 1
 fi
 
-# Create a 3GB .img file
+# Create a 4GB .img file
 img_path="/tmp/ventoy.img"
-dd if=/dev/zero of="$img_path" bs=1M count=3000
+dd if=/dev/zero of="$img_path" bs=1M count=4000
 
 # Set up loop device
 loop_device=$(losetup -f)
